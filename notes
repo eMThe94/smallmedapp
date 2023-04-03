@@ -17,3 +17,5 @@ linijek <groupId> oraz <artifactId>
  			</plugin>
  		</plugins>
  	</build>
+
+
