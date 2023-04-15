@@ -4,6 +4,7 @@ package to.zapisz.smallfizjoapp.model;
 import lombok.*;
 import jakarta.persistence.*;
 import to.zapisz.smallfizjoapp.model.enumlist.CountriesList;
+import to.zapisz.smallfizjoapp.model.enumlist.GenderList;
 
 @Getter
 @Setter
