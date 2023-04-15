@@ -1,4 +1,4 @@
 package to.zapisz.smallfizjoapp.controller;
 
-public class PatienController {
+public class ClientController {
 }
