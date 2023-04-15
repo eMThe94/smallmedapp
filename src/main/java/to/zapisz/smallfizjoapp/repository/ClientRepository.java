@@ -7,10 +7,10 @@ import to.zapisz.smallfizjoapp.model.ClientModel;
 import java.awt.print.Pageable;
 import java.util.List;
 
-public interface ClientRepository extends JpaRepository <ClientModel, Long> {
+public interface ClientRepository extends JpaRepository<ClientModel, Long> {
 
     Page<ClientModel> findAllBy(Pageable pageable);
-    List<ClientModel> findByFirstName(String firstName);
-    List<ClientModel> findByLastName (String lastName);
-    List<ClientModel> findBySex (String sex);
+//    List<ClientModel> findByFirstName(String firstName);
+//    List<ClientModel> findByLastName (String lastName);
+//    List<ClientModel> findByGender (String gender);
 }
