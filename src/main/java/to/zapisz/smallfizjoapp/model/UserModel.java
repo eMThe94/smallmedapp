@@ -1,28 +1,30 @@
 package to.zapisz.smallfizjoapp.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import to.zapisz.smallfizjoapp.model.enumlist.PositionList;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class OfficeModel {
+public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "name")
-    private String name;
-    @Column(name = "city")
-    private String city;
-    @Column(name = "street")
-    private String street;
-    @Column(name = "building_number")
-    private String buildingNumber;
+
+    private String email;
+
+    private PositionList position;
+
+
 
 
 }

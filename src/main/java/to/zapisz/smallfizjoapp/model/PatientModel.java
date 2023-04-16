@@ -12,7 +12,7 @@ import to.zapisz.smallfizjoapp.model.enumlist.GenderList;
 @AllArgsConstructor
 @Entity
 
-public class ClientModel {
+public class PatientModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
