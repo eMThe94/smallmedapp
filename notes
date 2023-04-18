@@ -1,0 +1,21 @@
+build umieszoczony po dependencjach, po zmianie versji maven na 3.0.5 z 2.7.8 poświetla na czerwono zawartość
+linijek <groupId> oraz <artifactId>
+
+ <build>
+ 		<plugins>
+ 			<plugin>
+ 				<groupId>org.springframework.boot</groupId>
+ 				<artifactId>spring-boot-maven-plugin</artifactId>
+ 				<configuration>
+ 					<excludes>
+ 						<exclude>
+ 							<groupId>org.projectlombok</groupId>
+ 							<artifactId>lombok</artifactId>
+ 						</exclude>
+ 					</excludes>
+ 				</configuration>
+ 			</plugin>
+ 		</plugins>
+ 	</build>
+
+
