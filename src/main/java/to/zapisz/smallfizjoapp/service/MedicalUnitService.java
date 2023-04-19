@@ -15,8 +15,8 @@ public class MedicalUnitService {
     private final MedicalUnitRepository medicalUnitRepository;
 
     //CREATE
-    public void addMedicalUnit(MedicalUnitModel medicalUnitModel){
-        medicalUnitRepository.save(medicalUnitModel);
+    public void addMedicalUnit(MedicalUnitModel addMedicalUnitModel){
+        medicalUnitRepository.save(addMedicalUnitModel);
     }
     //READ
     public List<MedicalUnitModel> getAllMedicalUnits(){
@@ -29,6 +29,7 @@ public class MedicalUnitService {
     //DELETE
     public void deleteMedicalUnit(Long id) {medicalUnitRepository.deleteById(id);}
 
+    // FIND BY ID
     public MedicalUnitModel getMedicalUnitById(Long id) {
         Optional<MedicalUnitModel> medicalUnit = medicalUnitRepository.findById(id);
         if(medicalUnit.isPresent()){
@@ -38,5 +39,4 @@ public class MedicalUnitService {
             return null;
         }
     }
-
 }

@@ -14,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class ReginstryModel {
+public class RegistryModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -24,7 +24,7 @@ public class MedicalUnitModel {
     @Column(name = "building_number")
     private String buildingNumber;
     @ManyToOne
-    @Column (name = "Therapist_id")
+    @JoinColumn (name = "Therapist_id")
     private TherapistModel Therapist;
 
 
